@@ -1,0 +1,30 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+
+        // Length mismatch means impossible
+        if (s.length() != t.length()) {
+            return false;
+        }
+
+        int[] freq = new int[26];
+
+        // Count characters from s
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i) - 'a']++;
+        }
+
+        // Remove characters using t
+        for (int i = 0; i < t.length(); i++) {
+            freq[t.charAt(i) - 'a']--;
+        }
+
+        // Check if all become zero
+        for (int count : freq) {
+            if (count != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
