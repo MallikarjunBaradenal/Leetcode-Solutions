@@ -11,3 +11,6 @@ https://youtu.be/3F3gZLL4Vn8?si=-HC8-axhMrAnnh-s
 
 49. Group Anagrams
 https://youtu.be/0D99cGyOSj0?si=GFQeXxPZqXytLC5W
+
+443. String Compression 
+https://youtu.be/cNakvqTDENM?si=Y4B4XDRYei1VWK94
