@@ -14,3 +14,6 @@ https://youtu.be/0D99cGyOSj0?si=GFQeXxPZqXytLC5W
 
 443.String Compression 
 https://youtu.be/cNakvqTDENM?si=Y4B4XDRYei1VWK94
+
+27.Remove-Element
+https://youtu.be/HxWagDSB_a8?si=Proeec_rzQ_SXCLF
