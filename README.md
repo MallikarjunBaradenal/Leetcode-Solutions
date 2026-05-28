@@ -17,3 +17,6 @@ https://youtu.be/cNakvqTDENM?si=Y4B4XDRYei1VWK94
 
 27.Remove-Element
 https://youtu.be/HxWagDSB_a8?si=Proeec_rzQ_SXCLF
+
+Create 9. Palindrome
+https://youtu.be/GhLd6bK4z9w?si=5yepox4Asmdi5C4-
