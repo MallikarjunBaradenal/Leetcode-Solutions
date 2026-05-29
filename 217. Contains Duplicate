@@ -1,0 +1,24 @@
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+
+        // HashSet stores only unique values
+        Set<Integer> set = new HashSet<>();
+
+        // Traverse every element in the array
+        for (int i = 0; i < nums.length; i++) {
+
+            // If current element already exists in HashSet,
+            // we have found a duplicate
+            if (set.contains(nums[i])) {
+                return true;
+            }
+
+            // First occurrence of this number
+            // Store it in HashSet
+            set.add(nums[i]);
+        }
+
+        // Loop completed without finding any duplicate
+        return false;
+    }
+}
