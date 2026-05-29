@@ -20,3 +20,6 @@ https://youtu.be/HxWagDSB_a8?si=Proeec_rzQ_SXCLF
 
 9. Palindrome
 https://youtu.be/GhLd6bK4z9w?si=5yepox4Asmdi5C4-
+
+217. Contains Duplicate 
+https://youtu.be/8q9L9OpHT3c?si=uaOFxm2sZ4vEi-gC
