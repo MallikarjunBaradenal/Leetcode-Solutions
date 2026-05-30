@@ -23,3 +23,6 @@ https://youtu.be/GhLd6bK4z9w?si=5yepox4Asmdi5C4-
 
 217. Contains Duplicate 
 https://youtu.be/8q9L9OpHT3c?si=uaOFxm2sZ4vEi-gC
+
+344.Reverse String 
+https://youtu.be/KX3q-LuA3QQ?si=s7mEg6ZnFIUjqhuC
