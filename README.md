@@ -26,3 +26,6 @@ https://youtu.be/8q9L9OpHT3c?si=uaOFxm2sZ4vEi-gC
 
 344.Reverse String 
 https://youtu.be/KX3q-LuA3QQ?si=s7mEg6ZnFIUjqhuC
+
+1221. Split a String in Balanced Strings
+https://youtu.be/JeQD5ILMDa0?si=qw9jm7MitDZ7SbMG
