@@ -32,3 +32,6 @@ https://youtu.be/JeQD5ILMDa0?si=qw9jm7MitDZ7SbMG
 
 Create 58.Length of Last word
 https://youtu.be/e9LBI0oPCGg?si=frdwGFHXc-QLw76a
+
+485.Max consecutive one
+https://youtu.be/NEsVXFgihzE?si=4YYnG-7qCuM9zoQ_
