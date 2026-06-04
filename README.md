@@ -38,3 +38,6 @@ https://youtu.be/NEsVXFgihzE?si=4YYnG-7qCuM9zoQ_
 
 1047. Remove All Adjacent Duplicates In String
 https://youtu.be/ghnjDHKVB2I?si=U2PCvD8OlopIPG7M
+
+1464. Maximum Product of Two Elements in an Array
+https://youtu.be/uvUK7kjmBRI?si=dJNiyIUNLnPjzHLp
