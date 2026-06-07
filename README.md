@@ -47,3 +47,6 @@ https://youtu.be/r56lnGJkHdw?si=ITDcoUi_BIjAzwgs
 
 13. Roman to Integer
 https://youtu.be/Iw98FtXnvZU?si=kpEofhZSKg-vHUAW
+
+35. Search Insert Dosition
+https://youtu.be/aPYHVUyePTc?si=7NVLyN43RJaCE0BF
