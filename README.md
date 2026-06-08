@@ -50,3 +50,6 @@ https://youtu.be/Iw98FtXnvZU?si=kpEofhZSKg-vHUAW
 
 35. Search Insert Dosition
 https://youtu.be/aPYHVUyePTc?si=7NVLyN43RJaCE0BF
+
+136. Single Number
+https://youtu.be/CNi5lD19Rcs?si=fhoSur2socILCv0Q
