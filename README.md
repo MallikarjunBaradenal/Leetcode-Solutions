@@ -56,3 +56,6 @@ https://youtu.be/CNi5lD19Rcs?si=fhoSur2socILCv0Q
 
 283. Move Zeroes
 https://youtu.be/p_ia6MI-T1k?si=1cQIaVI437w8Wz9W
+
+704. binary search
+705. https://youtu.be/_qOPk5FC2NU?si=X1Wh9EF3xpTIBKR_
