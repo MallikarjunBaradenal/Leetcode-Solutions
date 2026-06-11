@@ -59,3 +59,6 @@ https://youtu.be/p_ia6MI-T1k?si=1cQIaVI437w8Wz9W
 
 704. binary search
 705. https://youtu.be/_qOPk5FC2NU?si=X1Wh9EF3xpTIBKR_
+
+349. Inter section of two array
+https://youtu.be/He9kBIZJd40?si=7iFVAZ12LW6Tf3TF
