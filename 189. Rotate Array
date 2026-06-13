@@ -29,3 +29,31 @@ class Solution {
         }
     }
 }
+
+
+class Solution {
+
+    public void rotate(int[] nums, int k) {
+
+        int len = nums.length;      // Store the size of the array
+
+        k = k % len;                // Handle cases where k > array length
+
+        int[] result = new int[len]; // Create a temporary array
+
+        // Move each element to its rotated position
+        for (int i = 0; i < len; i++) {
+
+            // Calculate new index after rotation
+            result[(i + k) % len] = nums[i];
+
+        }
+
+        // Copy rotated elements back into original array
+        for (int i = 0; i < len; i++) {
+
+            nums[i] = result[i];    // Replace original values
+
+        }
+    }
+}
