@@ -65,3 +65,6 @@ https://youtu.be/He9kBIZJd40?si=7iFVAZ12LW6Tf3TF
 
 11. Container with Most Water
 https://www.youtube.com/watch?v=-OV83G_s4e8
+
+189. Rotate Array
+https://youtu.be/ck1w0io8-bY?si=TLFzBOIhJcrt9npO
