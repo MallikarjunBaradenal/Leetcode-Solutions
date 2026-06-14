@@ -68,3 +68,6 @@ https://www.youtube.com/watch?v=-OV83G_s4e8
 
 189. Rotate Array
 https://youtu.be/ck1w0io8-bY?si=TLFzBOIhJcrt9npO
+
+33. Search in Rotated Sorted Array
+https://www.youtube.com/watch?v=6WNZQBHWQJs
