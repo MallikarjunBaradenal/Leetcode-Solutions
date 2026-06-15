@@ -71,3 +71,6 @@ https://youtu.be/ck1w0io8-bY?si=TLFzBOIhJcrt9npO
 
 33. Search in Rotated Sorted Array
 https://www.youtube.com/watch?v=6WNZQBHWQJs
+
+121. Best Time to Buy and Sell Stock
+https://youtu.be/oLVNUJCq1co?si=a3Jy8A1FjAmP3wul
