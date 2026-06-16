@@ -74,3 +74,6 @@ https://www.youtube.com/watch?v=6WNZQBHWQJs
 
 121. Best Time to Buy and Sell Stock
 https://youtu.be/oLVNUJCq1co?si=a3Jy8A1FjAmP3wul
+
+287. Find the Duplicate Number
+https://www.youtube.com/watch?v=kE3EKeHq1Sw
