@@ -1,0 +1,50 @@
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+
+        int result[] = new int[nums.length]; // Stores final answer
+
+        for (int i = 0, temp = 1; i < nums.length; i++) { // Left → Right traversal
+            result[i] = temp;                             // Product of all elements before i
+            temp *= nums[i];                              // Update prefix product
+        }
+
+        for (int i = nums.length - 1, temp = 1; i >= 0; i--) { // Right → Left traversal
+            result[i] *= temp;                                  // Multiply by suffix product
+            temp *= nums[i];                                    // Update suffix product
+        }
+
+        return result; // Product of array except self
+    }
+}
+
+
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+
+        // Arrays to store product of elements to the left and right of each index
+        int leftProduct[] = new int[nums.length];
+        int rightProduct[] = new int[nums.length];
+
+        // Build leftProduct array
+        // leftProduct[i] = product of all elements before index i
+        for (int i = 0, temp = 1; i < nums.length; i++) {
+            leftProduct[i] = temp;
+            temp *= nums[i];
+        }
+
+        // Build rightProduct array
+        // rightProduct[i] = product of all elements after index i
+        for (int i = nums.length - 1, temp = 1; i >= 0; i--) {
+            rightProduct[i] = temp;
+            temp *= nums[i];
+        }
+
+        // Multiply left and right products to get the answer
+        int result[] = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = leftProduct[i] * rightProduct[i];
+        }
+
+        return result;
+    }
+}
