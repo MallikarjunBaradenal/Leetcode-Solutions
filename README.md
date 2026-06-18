@@ -80,3 +80,6 @@ https://www.youtube.com/watch?v=kE3EKeHq1Sw
 
 238. Product of Array Except Self
 https://www.youtube.com/watch?v=HumVp2ckSk0
+
+152. Maximum Product Subarray
+https://www.youtube.com/watch?v=tHNsZHXnYd4
