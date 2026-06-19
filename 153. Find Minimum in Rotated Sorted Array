@@ -1,0 +1,20 @@
+class Solution {
+    public int findMin(int[] nums) {
+
+        int left = 0;                    // Start of search space
+        int right = nums.length - 1;     // End of search space
+
+        while (left < right) {           // Continue until one element remains
+
+            int mid = left + (right - left) / 2; // Safe middle index
+
+            if (nums[mid] > nums[right]) { // Minimum must be on right side
+                left = mid + 1;            // Discard left half including mid
+            } else {                       // Minimum is at mid or left side
+                right = mid;               // Keep mid as possible answer
+            }
+        }
+
+        return nums[left];               // left == right → minimum element
+    }
+}
