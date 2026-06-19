@@ -83,3 +83,7 @@ https://www.youtube.com/watch?v=HumVp2ckSk0
 
 152. Maximum Product Subarray
 https://www.youtube.com/watch?v=tHNsZHXnYd4
+
+153. Find Minimum in Rotated Sorted Array
+https://www.youtube.com/watch?v=XVsxkCKx7sw
+
