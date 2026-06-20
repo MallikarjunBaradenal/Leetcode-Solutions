@@ -1,0 +1,12 @@
+class Solution {
+    public int[] countBits(int n) {
+
+        int[] dp = new int[n + 1];          // answer array
+
+        for (int i = 1; i <= n; i++) {      // compute for every number
+            dp[i] = dp[i >> 1] + (i & 1);   // bits in i/2 + last bit
+        }
+
+        return dp;                          // return result
+    }
+}
