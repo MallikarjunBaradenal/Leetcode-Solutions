@@ -87,3 +87,6 @@ https://www.youtube.com/watch?v=tHNsZHXnYd4
 153. Find Minimum in Rotated Sorted Array
 https://www.youtube.com/watch?v=XVsxkCKx7sw
 
+169. Majority Element
+https://youtu.be/d4NIbhTZ4N0?si=6jdhoGDVfonvKJr2
+
