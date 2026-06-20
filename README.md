@@ -90,3 +90,5 @@ https://www.youtube.com/watch?v=XVsxkCKx7sw
 169. Majority Element
 https://youtu.be/d4NIbhTZ4N0?si=6jdhoGDVfonvKJr2
 
+219. Contains Duplicate 2 
+https://youtu.be/NIyVYYJjqbw?si=UCHuKX7wYXGUlf95
