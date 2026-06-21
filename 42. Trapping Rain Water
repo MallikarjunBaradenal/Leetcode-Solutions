@@ -1,0 +1,38 @@
+class Solution {
+    public int trap(int[] height) {
+
+        int left = 0;                       // left pointer
+        int right = height.length - 1;     // right pointer
+
+        int leftMax = 0;                    // maximum height seen from left
+        int rightMax = 0;                   // maximum height seen from right
+
+        int water = 0;                      // total trapped water
+
+        while (left < right) {              // process until pointers meet
+
+            if (height[left] < height[right]) { // left side is limiting
+
+                if (height[left] >= leftMax) {  // update left maximum
+                    leftMax = height[left];
+                } else {                        // water trapped at left
+                    water += leftMax - height[left];
+                }
+
+                left++;                         // move left pointer
+
+            } else {                            // right side is limiting
+
+                if (height[right] >= rightMax) { // update right maximum
+                    rightMax = height[right];
+                } else {                         // water trapped at right
+                    water += rightMax - height[right];
+                }
+
+                right--;                         // move right pointer
+            }
+        }
+
+        return water;                            // total trapped water
+    }
+}
