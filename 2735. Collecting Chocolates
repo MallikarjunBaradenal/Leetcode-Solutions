@@ -1,0 +1,31 @@
+class Solution {
+    public long minCost(int[] nums, int x) {
+
+        int n = nums.length;                    // number of chocolates
+        long[] best = new long[n];             // minimum cost for each position
+
+        for (int i = 0; i < n; i++) {
+            best[i] = nums[i];                 // initially no rotation
+        }
+
+        long answer = Long.MAX_VALUE;          // final minimum cost
+
+        for (int rot = 0; rot < n; rot++) {    // try every rotation count
+
+            long currentCost = (long) rot * x; // cost of performing rotations
+
+            for (int i = 0; i < n; i++) {
+
+                int idx = (i - rot + n) % n;   // chocolate reaching position i
+
+                best[i] = Math.min(best[i], nums[idx]); // best chocolate seen
+
+                currentCost += best[i];        // add collection cost
+            }
+
+            answer = Math.min(answer, currentCost); // update answer
+        }
+
+        return answer;
+    }
+}
