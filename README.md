@@ -95,3 +95,6 @@ https://youtu.be/NIyVYYJjqbw?si=UCHuKX7wYXGUlf95
 
 338. Count Bits
 https://youtu.be/qV3B9nY4avM?si=pYeY3mpJAwEF97oM
+
+172. Factorial Trailing Zeroes
+173. https://www.youtube.com/watch?v=HIWJrPgk3yY
