@@ -1,0 +1,13 @@
+class Solution {
+    public int trailingZeroes(int n) {
+
+        int count = 0;              // stores total trailing zeros
+
+        while (n > 0) {             // keep counting factors of 5
+            n /= 5;                 // count multiples of 5,25,125,...
+            count += n;             // add available factors of 5
+        }
+
+        return count;               // final answer
+    }
+}
