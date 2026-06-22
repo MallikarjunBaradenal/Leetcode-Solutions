@@ -1,0 +1,16 @@
+class Solution {
+    public char findTheDifference(String s, String t) {
+
+        char result = 0;                 // Stores XOR of all characters
+
+        for (char ch : s.toCharArray()) { // Traverse first string
+            result ^= ch;                 // XOR current character
+        }
+
+        for (char ch : t.toCharArray()) { // Traverse second string
+            result ^= ch;                 // Same characters cancel out
+        }
+
+        return result;                    // Remaining character is answer
+    }
+}
