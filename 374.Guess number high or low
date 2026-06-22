@@ -1,0 +1,29 @@
+/* The guess API is defined in the parent class GuessGame.
+   int guess(int num);
+*/
+
+public class Solution extends GuessGame {
+
+    public int guessNumber(int n) {
+
+        int left = 1;              // smallest possible number
+        int right = n;             // largest possible number
+
+        while (left <= right) {    // continue until search space is exhausted
+
+            int mid = left + (right - left) / 2; // avoid integer overflow
+
+            int result = guess(mid); // check the guessed number
+
+            if (result == 0) {       // found the picked number
+                return mid;
+            } else if (result < 0) { // picked number is smaller
+                right = mid - 1;
+            } else {                 // picked number is larger
+                left = mid + 1;
+            }
+        }
+
+        return -1; // never reached for valid inputs
+    }
+}
