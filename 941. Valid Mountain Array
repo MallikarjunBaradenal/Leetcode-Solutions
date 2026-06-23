@@ -1,0 +1,21 @@
+class Solution {
+    public boolean validMountainArray(int[] arr) {
+
+        int n = arr.length;                 // size of array
+        int i = 0;                          // pointer to climb mountain
+
+        while (i + 1 < n && arr[i] < arr[i + 1]) { // move upward
+            i++;
+        }
+
+        if (i == 0 || i == n - 1) {         // peak can't be first or last
+            return false;
+        }
+
+        while (i + 1 < n && arr[i] > arr[i + 1]) { // move downward
+            i++;
+        }
+
+        return i == n - 1;                  // must reach end exactly
+    }
+}
