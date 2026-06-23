@@ -1,0 +1,17 @@
+class Solution {
+    public int[][] transpose(int[][] matrix) {
+
+        int rows = matrix.length;          // number of rows
+        int cols = matrix[0].length;       // number of columns
+
+        int[][] result = new int[cols][rows]; // dimensions become cols × rows
+
+        for (int i = 0; i < rows; i++) {       // traverse each row
+            for (int j = 0; j < cols; j++) {   // traverse each column
+                result[j][i] = matrix[i][j];   // swap row and column index
+            }
+        }
+
+        return result;                         // transposed matrix
+    }
+}
