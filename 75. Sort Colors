@@ -1,0 +1,33 @@
+class Solution {
+    public void sortColors(int[] nums) {
+
+        int low = 0;                 // next position for 0
+        int mid = 0;                 // current element
+        int high = nums.length - 1;  // next position for 2
+
+        while (mid <= high) {        // process all elements
+
+            if (nums[mid] == 0) {    // current element is 0
+
+                int temp = nums[low]; // swap nums[low] and nums[mid]
+                nums[low] = nums[mid];
+                nums[mid] = temp;
+
+                low++;               // move 0 boundary right
+                mid++;               // move to next element
+
+            } else if (nums[mid] == 1) { // current element is 1
+
+                mid++;               // already in correct region
+
+            } else {                 // current element is 2
+
+                int temp = nums[mid]; // swap nums[mid] and nums[high]
+                nums[mid] = nums[high];
+                nums[high] = temp;
+
+                high--;              // move 2 boundary left
+            }
+        }
+    }
+}
