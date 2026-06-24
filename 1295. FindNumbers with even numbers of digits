@@ -1,0 +1,15 @@
+class Solution {
+    public int findNumbers(int[] nums) {
+        int count = 0; // stores answer
+
+        for (int num : nums) { // check every number
+            int digits = String.valueOf(num).length(); // count digits
+
+            if (digits % 2 == 0) { // even number of digits
+                count++; // increase answer
+            }
+        }
+
+        return count; // final count
+    }
+}
