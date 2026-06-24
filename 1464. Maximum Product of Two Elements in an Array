@@ -1,0 +1,19 @@
+class Solution {
+    public int maxProduct(int[] nums) {
+
+        int max1 = 0;                    // largest element
+        int max2 = 0;                    // second largest element
+
+        for (int num : nums) {           // traverse array once
+
+            if (num > max1) {            // found new largest
+                max2 = max1;             // old largest becomes second largest
+                max1 = num;              // update largest
+            } else if (num > max2) {     // update second largest
+                max2 = num;
+            }
+        }
+
+        return (max1 - 1) * (max2 - 1);  // required product
+    }
+}
