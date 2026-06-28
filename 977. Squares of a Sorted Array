@@ -1,0 +1,29 @@
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+
+        int n = nums.length;                 // Size of array
+        int[] result = new int[n];           // Stores final sorted squares
+
+        int left = 0;                        // Start pointer
+        int right = n - 1;                   // End pointer
+        int index = n - 1;                   // Fill result from back
+
+        while (left <= right) {              // Process all elements
+
+            int leftSquare = nums[left] * nums[left];     // Square of left value
+            int rightSquare = nums[right] * nums[right];  // Square of right value
+
+            if (leftSquare > rightSquare) {  // Larger square found on left
+                result[index] = leftSquare;  // Place at largest available position
+                left++;                      // Move left pointer
+            } else {                         // Larger or equal square on right
+                result[index] = rightSquare; // Place at largest available position
+                right--;                     // Move right pointer
+            }
+
+            index--;                         // Move to next position
+        }
+
+        return result;                       // Return sorted squares
+    }
+}
