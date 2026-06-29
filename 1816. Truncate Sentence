@@ -1,0 +1,19 @@
+class Solution {
+    public String truncateSentence(String s, int k) {
+
+        int count = 0;                         // words counted so far
+
+        for (int i = 0; i < s.length(); i++) { // scan sentence
+
+            if (s.charAt(i) == ' ') {          // found word boundary
+                count++;                       // completed one word
+            }
+
+            if (count == k) {                  // already got first k words
+                return s.substring(0, i);      // return required prefix
+            }
+        }
+
+        return s;                              // sentence has exactly k words
+    }
+}
