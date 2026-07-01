@@ -1,0 +1,13 @@
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int n = nums.length;                 // original array size
+        int[] ans = new int[2 * n];          // result array of size 2n
+
+        for (int i = 0; i < n; i++) {        // traverse original array
+            ans[i] = nums[i];                // place first copy
+            ans[i + n] = nums[i];            // place second copy
+        }
+
+        return ans;                          // return concatenated array
+    }
+}
