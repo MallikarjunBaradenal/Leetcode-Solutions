@@ -1,0 +1,13 @@
+class Solution {
+    public String capitalizeTitle(String title) {
+        String[] words = title.toLowerCase().split(" "); // convert all letters to lowercase and split into words
+        
+        for (int i = 0; i < words.length; i++) { // process every word
+            if (words[i].length() > 2) { // only words longer than 2 characters
+                words[i] = Character.toUpperCase(words[i].charAt(0)) + words[i].substring(1); // capitalize first letter
+            }
+        }
+        
+        return String.join(" ", words); // join words back into a sentence
+    }
+}
