@@ -1,0 +1,21 @@
+class Solution {
+    public int countEven(int num) {
+        int count = 0;                          // answer count
+
+        for (int i = 1; i <= num; i++) {        // check every number
+            int x = i;                          // copy of current number
+            int sum = 0;                        // digit sum
+
+            while (x > 0) {                     // extract digits
+                sum += x % 10;                  // add last digit
+                x /= 10;                        // remove last digit
+            }
+
+            if (sum % 2 == 0) {                 // digit sum is even
+                count++;                        // include it
+            }
+        }
+
+        return count;                           // final answer
+    }
+}
