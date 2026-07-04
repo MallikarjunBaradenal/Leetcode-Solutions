@@ -1,0 +1,8 @@
+class Solution {
+    public double[] convertTemperature(double celsius) {
+        double kelvin = celsius + 273.15;          // Celsius → Kelvin
+        double fahrenheit = celsius * 1.80 + 32;  // Celsius → Fahrenheit
+
+        return new double[]{kelvin, fahrenheit};  // return both values
+    }
+}
