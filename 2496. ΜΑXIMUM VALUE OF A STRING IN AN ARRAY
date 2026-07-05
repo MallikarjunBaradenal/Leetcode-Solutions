@@ -1,0 +1,28 @@
+class Solution {
+    public int maximumValue(String[] strs) {
+        int max = 0; // stores maximum value found
+        
+        for (String s : strs) { // process every string
+            boolean numeric = true; // assume string contains only digits
+            
+            for (char c : s.toCharArray()) { // check each character
+                if (!Character.isDigit(c)) { // non-digit found
+                    numeric = false;
+                    break;
+                }
+            }
+            
+            int value; // value of current string
+            
+            if (numeric) {
+                value = Integer.parseInt(s); // numeric value
+            } else {
+                value = s.length(); // length value
+            }
+            
+            max = Math.max(max, value); // update maximum
+        }
+        
+        return max; // answer
+    }
+}
