@@ -1,0 +1,19 @@
+class Solution {
+    public boolean isCircularSentence(String sentence) {
+        int n = sentence.length();                       // length of sentence
+
+        if (sentence.charAt(0) != sentence.charAt(n - 1)) {
+            return false;                               // first and last character must match
+        }
+
+        for (int i = 0; i < n; i++) {                   // scan entire string
+            if (sentence.charAt(i) == ' ') {            // found word boundary
+                if (sentence.charAt(i - 1) != sentence.charAt(i + 1)) {
+                    return false;                       // adjacent words not circular
+                }
+            }
+        }
+
+        return true;                                    // all conditions satisfied
+    }
+}
