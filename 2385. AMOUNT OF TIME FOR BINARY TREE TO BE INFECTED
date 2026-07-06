@@ -1,0 +1,43 @@
+class Solution {
+    Map<TreeNode, TreeNode> parent = new HashMap<>();
+
+    public int amountOfTime(TreeNode root, int start) {
+        TreeNode s = dfs(root, null, start);
+
+        Queue<TreeNode> q = new LinkedList<>();
+        Set<TreeNode> vis = new HashSet<>();
+        q.offer(s);
+        vis.add(s);
+
+        int time = -1;
+
+        while (!q.isEmpty()) {
+            time++;
+            for (int i = q.size(); i > 0; i--) {
+                TreeNode cur = q.poll();
+
+                if (cur.left != null && vis.add(cur.left))
+                    q.offer(cur.left);
+
+                if (cur.right != null && vis.add(cur.right))
+                    q.offer(cur.right);
+
+                if (parent.get(cur) != null && vis.add(parent.get(cur)))
+                    q.offer(parent.get(cur));
+            }
+        }
+        return time;
+    }
+
+    TreeNode dfs(TreeNode node, TreeNode par, int start) {
+        if (node == null) return null;
+
+        parent.put(node, par);
+        if (node.val == start) return node;
+
+        TreeNode left = dfs(node.left, node, start);
+        if (left != null) return left;
+
+        return dfs(node.right, node, start);
+    }
+}
