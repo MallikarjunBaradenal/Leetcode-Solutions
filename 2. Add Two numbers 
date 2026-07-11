@@ -1,0 +1,27 @@
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0); // dummy head
+        ListNode curr = dummy;            // result pointer
+        int carry = 0;                    // carry from previous addition
+
+        while (l1 != null || l2 != null || carry != 0) {
+            int sum = carry;              // start with carry
+
+            if (l1 != null) {
+                sum += l1.val;            // add first list digit
+                l1 = l1.next;             // move ahead
+            }
+
+            if (l2 != null) {
+                sum += l2.val;            // add second list digit
+                l2 = l2.next;             // move ahead
+            }
+
+            carry = sum / 10;             // new carry
+            curr.next = new ListNode(sum % 10); // current digit
+            curr = curr.next;             // move result pointer
+        }
+
+        return dummy.next;                // skip dummy node
+    }
+}
