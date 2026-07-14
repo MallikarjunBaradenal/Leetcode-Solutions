@@ -1,0 +1,34 @@
+class Solution {
+    public String convert(String s, int numRows) {
+        // No zigzag needed for one row or short string
+        if (numRows == 1 || numRows >= s.length()) return s;
+
+        // Store characters of each row
+        StringBuilder[] rows = new StringBuilder[numRows];
+        for (int i = 0; i < numRows; i++) {
+            rows[i] = new StringBuilder();
+        }
+
+        int currRow = 0;          // Current row
+        boolean down = false;     // Direction
+
+        // Place each character into its zigzag row
+        for (char c : s.toCharArray()) {
+            rows[currRow].append(c);
+
+            if (currRow == 0 || currRow == numRows - 1) {
+                down = !down;      // Change direction
+            }
+
+            currRow += down ? 1 : -1;
+        }
+
+        // Merge all rows
+        StringBuilder ans = new StringBuilder();
+        for (StringBuilder row : rows) {
+            ans.append(row);
+        }
+
+        return ans.toString();
+    }
+}
