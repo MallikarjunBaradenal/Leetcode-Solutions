@@ -1,0 +1,21 @@
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        ListNode dummy = new ListNode(0); // Dummy node before head
+        dummy.next = head;                // Connect dummy to list
+
+        ListNode prev = dummy;            // Node before current pair
+
+        while (prev.next != null && prev.next.next != null) {
+            ListNode first = prev.next;        // First node
+            ListNode second = first.next;      // Second node
+
+            first.next = second.next;          // Remove second
+            second.next = first;               // Put second before first
+            prev.next = second;                // Connect previous part
+
+            prev = first;                      // Move to next pair
+        }
+
+        return dummy.next; // New head
+    }
+}
